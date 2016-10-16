@@ -1,0 +1,12 @@
+{application, animu_bot,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { animu_bot_app, []}},
+  {env, []}
+ ]}.
