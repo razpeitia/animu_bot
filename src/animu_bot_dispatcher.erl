@@ -65,7 +65,7 @@ response(_ParsedRequest, Text) ->
 dispatch('GET', [<<"bot">>], _Req) ->
     {ok, [], <<"Animu bot v1.0">>};
 
-dispatch(Method, [<<"bot">>, ?BOT_TOKEN], Req)
+dispatch(Method, [<<"bot">>, BotToken], Req)
     when Method == 'GET'; Method == 'POST' ->
     lager:info("Dispatching..."),
     Headers = [{<<"content-type">>, <<"application/json">>}],
